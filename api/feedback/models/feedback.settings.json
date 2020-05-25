@@ -1,0 +1,129 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feedbacks",
+  "info": {
+    "name": "feedback"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "en_title": {
+      "type": "string",
+      "required": true
+    },
+    "cn_title": {
+      "type": "string",
+      "required": true
+    },
+    "en_contents": {
+      "type": "richtext",
+      "required": true
+    },
+    "cn_contents": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "day1": {
+      "type": "richtext"
+    },
+    "day1_media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "day2": {
+      "type": "richtext"
+    },
+    "day2_media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "day3": {
+      "type": "richtext"
+    },
+    "day3_media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "day4": {
+      "type": "richtext"
+    },
+    "day4_media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "day5": {
+      "type": "richtext"
+    },
+    "day5_media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "day6": {
+      "type": "richtext"
+    },
+    "day6_media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "day1_check": {
+      "type": "boolean"
+    }
+  }
+}
